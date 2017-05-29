@@ -1,1 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
+*.pyc
+.idea/
+components/
+db.sqlite3
+
+
+
+
+
