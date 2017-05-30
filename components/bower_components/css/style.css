@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Jura:600');
+
+@media screen and (min-width: 320px) {
+    .img{
+        width: 50%;
+        border: thick solid #e0e0e0;
+        margin-top:25px;
+        margin-bottom: -22px;
+    }
+
+    h1 {
+        font-size: 25px;
+        font-family: 'Anton', sans-serif;
+    }
+
+    p{
+        font-family: 'Jura', sans-serif;
+        font-size: 13px;
+    }
+
+    .dp{
+        border: thin solid #e0e0e0;
+        padding: 15px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .img{
+        width: 901px;
+        border: thick solid #e0e0e0;
+        margin-top:40px;
+        margin-bottom: -22px;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-family: 'Anton', sans-serif;
+        text-align: left !important;
+    }
+
+    p{
+        font-family: 'Jura', sans-serif;
+        font-size: 16px;
+    }
+
+    .dp{
+        border: thin solid #e0e0e0;
+        padding: 15px;
+    }
+}
+
+/*
+ Com uma largura mínima de 992 pixels. Monitores por exemplo.
+*/
+@media screen and (min-width: 992px) {
+    .img{
+        width: 901px;
+        border: thick solid #e0e0e0;
+        margin-top:40px;
+        margin-bottom: -22px;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-family: 'Anton', sans-serif;
+        text-align: left !important;
+    }
+
+    p{
+        font-family: 'Jura', sans-serif;
+        font-size: 16px;
+    }
+
+    .dp{
+        border: thin solid #e0e0e0;
+        padding: 15px;
+    }
+}
+
+/*
+ Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
+*/
+@media screen and (min-width: 1200px) {
+        .img{
+        width: 70%;
+        border: thick solid #e0e0e0;
+        margin-top:10px;
+    }
+
+}
