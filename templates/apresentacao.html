@@ -7,7 +7,7 @@
      </div>
      <div class="col s12 m9 desc">
          <h1 class="center">{{ dado.nome }}</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores illo, ipsam labore libero molestiae officia placeat, porro, possimus provident quasi veritatis! Amet cupiditate ex non odio rerum veniam veritatis.<br/> <a href="#">GITHUB</a></p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores illo, ipsam labore libero molestiae officia placeat, porro, possimus provident quasi veritatis! Amet cupiditate ex non odio rerum veniam veritatis.<br/> <a href="{{ dado.github }}">GITHUB</a></p>
      </div>
    </div>
     <div class="row">
@@ -15,12 +15,12 @@
            <a class="collection-item">Dados Pessoais</a>
         </div>
         <div class="dp">
-            <h6>idade: <small>{{ dado.idade}}</small></h6>
             <h6>Data Nascimento: <small>{{ dado.dataNacimento}}</small></h6>
-            <h6>idade: <small>{{ dado.idade}}</small></h6>
-            <h6>idade: <small>{{ dado.idade}}</small></h6>
-            <h6>idade: <small>{{ dado.idade}}</small></h6>
-            <h6>idade: <small>{{ dado.idade}}</small></h6>
+            <h6>Idade: <small>{{ dado.idade}} anos</small></h6>
+            <h6>Telefone: <small>({{ dado.ddd}}) {{ dado.celuar }}</small></h6>
+            <h6>E-mail: <small><a href="mailto:seuemail@mail.com">{{ dado.email }}</a></small></h6>
+            <h6>GitHub: <small><a href="{{ dado.github }}">{{ dado.github}}</a></small></h6>
         </div>
     </div>
+    {% include 'conhecimento.html' %}
 {% endblock %}
