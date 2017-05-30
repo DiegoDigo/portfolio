@@ -1,10 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 *.pyc
 .idea/
-components/
+components/bower_components/jquery/
+components/bower_components/materialize/
 db.sqlite3
-
-
-
-
-
+home/__pycache__/
+home/migrations/__pycache__/
+portfolio/__pycache__/
+media/
