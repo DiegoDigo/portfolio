@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}{{ dado.nome }}{% endblock %}
+{% block content %}
+   <div class="row">
+     <div class="col s12 m3 center">
+         <img class="responsive-img circle img" src="{{ dado.imagen.url }}">
+     </div>
+     <div class="col s12 m9 desc">
+         <h1 class="center">{{ dado.nome }}</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores illo, ipsam labore libero molestiae officia placeat, porro, possimus provident quasi veritatis! Amet cupiditate ex non odio rerum veniam veritatis.<br/> <a href="#">GITHUB</a></p>
+     </div>
+   </div>
+    <div class="row">
+        <div class="collection">
+           <a class="collection-item">Dados Pessoais</a>
+        </div>
+        <div class="dp">
+            <h6>idade: <small>{{ dado.idade}}</small></h6>
+            <h6>Data Nascimento: <small>{{ dado.dataNacimento}}</small></h6>
+            <h6>idade: <small>{{ dado.idade}}</small></h6>
+            <h6>idade: <small>{{ dado.idade}}</small></h6>
+            <h6>idade: <small>{{ dado.idade}}</small></h6>
+            <h6>idade: <small>{{ dado.idade}}</small></h6>
+        </div>
+    </div>
+{% endblock %}

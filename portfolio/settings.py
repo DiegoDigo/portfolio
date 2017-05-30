@@ -45,7 +45,7 @@ TERCEIROS_APPS = [
 ]
 
 MEUS_APPS = [
-
+   'home',
 ]
 
 INSTALLED_APPS = NATIVE_APPS + TERCEIROS_APPS + MEUS_APPS
@@ -123,7 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'UTC'
 
@@ -141,8 +141,11 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')
+MEDIA_URL = '/media/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')
 
 BOWER_INSTALLED_APPS = (
     "materialize",
