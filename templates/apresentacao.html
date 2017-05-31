@@ -7,12 +7,12 @@
      </div>
      <div class="col s12 m9 desc">
          <h1 class="center">{{ dado.nome }}</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores illo, ipsam labore libero molestiae officia placeat, porro, possimus provident quasi veritatis! Amet cupiditate ex non odio rerum veniam veritatis.<br/> <a href="{{ dado.github }}">GITHUB</a></p>
+         <p>{{ dado.descricao }}<br/> <a href="{{ dado.github }}">GITHUB</a></p>
      </div>
    </div>
     <div class="row">
         <div class="collection">
-           <a class="collection-item">Dados Pessoais</a>
+           <a class="collection-item titulo">Dados Pessoais</a>
         </div>
         <div class="dp">
             <h6>Data Nascimento: <small>{{ dado.dataNacimento}}</small></h6>

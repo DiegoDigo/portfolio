@@ -1,14 +1,16 @@
 <div class="row">
     <div class="collection">
-        <a class="collection-item">Projetos</a>
+        <a class="collection-item titulo">Projetos</a>
     </div>
+    {% for projeto in dado.projetos.all %}
     <div class="dp">
-        {% for projeto in dado.projetos.all %}
-            <div class="row">
-                   <h6>Nome Projeto : {{ projeto.nome }}</h6>
-                   <h6>Link : {{ projeto.link }}</h6>
-                   <h6>Descricao : {{ projeto.descricao }}</h6>
+        <div class="row">
+            <div class="col s12">
+                <h6>Nome Projeto : <small>{{ projeto.nome }}</small></h6>
+                <h6>Link : <small><a href="{{ projeto.link }}">{{ projeto.link }}</a></small></h6>
+                <p class="desc">{{ projeto.descricao }}</p>
             </div>
-        {% endfor %}
-   </div>
+        </div>
+    </div>
+    {% endfor %}
 </div>

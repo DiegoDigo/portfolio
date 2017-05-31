@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Jura:600');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Nova+Mono');
+
+body{
+    background-color: #F5F5F5;
+}
+
 
 @media screen and (min-width: 320px) {
     .img{
@@ -21,9 +27,26 @@
     .dp{
         border: thin solid #e0e0e0;
         padding: 15px;
+        background-color: #ffffff;
+        margin-bottom: 15px;
     }
-}
+    .titulo{
+        font-family: 'Nova Mono', monospace;
+        text-align: center !important;
+        font-size: 17px;
+    }
+    div.dp h6{
+        font-family: 'Droid Serif', serif;
+        font-weight: 900;
+        font-size: 14px;
+    }
 
+    div.dp h6 small ,.desc{
+        font-family: 'Droid Serif', serif;
+        font-weight: 300;
+    }
+
+}
 
 @media screen and (min-width: 768px) {
     .img{
@@ -47,6 +70,7 @@
     .dp{
         border: thin solid #e0e0e0;
         padding: 15px;
+        background-color: #ffffff;
     }
 }
 
@@ -75,6 +99,7 @@
     .dp{
         border: thin solid #e0e0e0;
         padding: 15px;
+        background-color: #ffffff;
     }
 }
 

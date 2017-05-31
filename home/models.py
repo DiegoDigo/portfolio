@@ -5,6 +5,8 @@ from django.db import models
 class Projeto(models.Model):
     nome = models.CharField(verbose_name=u"Nome Projeto", max_length=100)
     link = models.CharField(verbose_name=u"Link", max_length=100)
+    dataInicio = models.DateField(verbose_name=u"Data Inicio",  auto_now_add=False)
+    dataFim = models.DateField(verbose_name=u"Data Fim",  auto_now_add=False)
     descricao = models.TextField(verbose_name=u"Descrição", null=True, blank=True)
 
     def __str__(self):
@@ -33,6 +35,7 @@ class DadosPessoal(models.Model):
     idade = models.PositiveIntegerField(verbose_name=u"Idade")
     email = models.EmailField(verbose_name=u"E-mail")
     github = models.CharField(verbose_name=u"github", max_length=100, null=True, blank=True)
+    linkdin = models.CharField(verbose_name=u"linkdin", max_length=100, null=True, blank=True)
     ddd = models.CharField(verbose_name=u"DDD", max_length=3)
     celuar = models.CharField(verbose_name=u"celeular", max_length=9)
     descricao = models.TextField(verbose_name=u"Descrição", null=True, blank=True)
