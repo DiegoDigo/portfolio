@@ -9,13 +9,16 @@
                   <h6>{{ conhecimento.nome }}</h6>
                </div>
                <div class="col s6">
-                    {% for vezes in nivel %}
+                  <div class="right">
+                      {% for vezes in nivel %}
                         {% if vezes <= conhecimento.nivel %}
-                            <a class="right"><i class="material-icons">star</i></a>
-                        {% elif vezes > conhecimento.nivel %}
+                            <a class="left"><i class="material-icons">star</i></a>
+                        {% endif %}
+                        {% if vezes > conhecimento.nivel %}
                             <a class="right"><i class="material-icons">star_border</i></a>
                         {% endif %}
                     {% endfor %}
+                  </div>
                </div>
             </div>
         {% endfor %}

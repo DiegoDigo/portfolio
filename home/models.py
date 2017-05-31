@@ -6,7 +6,7 @@ class Projeto(models.Model):
     nome = models.CharField(verbose_name=u"Nome Projeto", max_length=100)
     link = models.CharField(verbose_name=u"Link", max_length=100)
     dataInicio = models.DateField(verbose_name=u"Data Inicio",  auto_now_add=False)
-    dataFim = models.DateField(verbose_name=u"Data Fim",  auto_now_add=False)
+    dataFim = models.DateField(verbose_name=u"Data Fim",  auto_now_add=False, null=True, blank=True)
     descricao = models.TextField(verbose_name=u"Descrição", null=True, blank=True)
 
     def __str__(self):
