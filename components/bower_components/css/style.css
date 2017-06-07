@@ -45,32 +45,74 @@ body{
         font-family: 'Droid Serif', serif;
         font-weight: 300;
     }
+    .acon{
+        text-align: left !important;
+    }
+    .aconNivel{
+        text-align: right !important;
+    }
+}
 
+@media screen and (min-width: 640px) {
+        .img{
+        width: 100%;
+        border: thick solid #e0e0e0;
+        margin-top:25px;
+        margin-bottom: -22px;
+    }
+    .acon{
+        text-align: left !important;
+    }
+    .aconNivel{
+        text-align: right !important;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .img{
         width: 901px;
         border: thick solid #e0e0e0;
-        margin-top:40px;
+        margin-top:10px;
         margin-bottom: -22px;
     }
 
     h1 {
         font-size: 35px;
-        font-family: 'Anton', sans-serif;
         text-align: left !important;
+        font-family: 'Anton', sans-serif;
     }
 
     p{
         font-family: 'Jura', sans-serif;
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .dp{
         border: thin solid #e0e0e0;
         padding: 15px;
         background-color: #ffffff;
+        margin-bottom: 15px;
+    }
+    .titulo{
+        font-family: 'Nova Mono', monospace;
+        text-align: center !important;
+        font-size: 17px;
+    }
+    div.dp h6{
+        font-family: 'Droid Serif', serif;
+        font-weight: 900;
+        font-size: 14px;
+    }
+
+    div.dp h6 small ,.desc{
+        font-family: 'Droid Serif', serif;
+        font-weight: 300;
+    }
+    .acon{
+        text-align: left !important;
+    }
+    .aconNivel{
+        text-align: left !important;
     }
 }
 
@@ -101,16 +143,64 @@ body{
         padding: 15px;
         background-color: #ffffff;
     }
+    .acon{
+        text-align: center !important;
+    }
+    .aconNivel{
+        text-align: left !important;
+    }
 }
+
+
+
 
 /*
  Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
 */
 @media screen and (min-width: 1200px) {
-        .img{
-        width: 70%;
+    .img{
+        width: 75%;
         border: thick solid #e0e0e0;
-        margin-top:10px;
+        margin-top:25px;
+    }
+    h1 {
+        font-size: 40px;
+        font-family: 'Anton', sans-serif;
+        text-align: left !important;
+    }
+
+    p{
+        font-family: 'Jura', sans-serif;
+        font-size: 18px;
+    }
+
+    .dp{
+        border: thin solid #e0e0e0;
+        padding: 15px;
+        background-color: #ffffff;
+    }
+
+      .titulo{
+        font-family: 'Nova Mono', monospace;
+        text-align: center !important;
+        font-size: 19px;
+    }
+    div.dp h6{
+        font-family: 'Droid Serif', serif;
+        font-weight: 900;
+        font-size: 18px;
+    }
+
+    div.dp h6 small ,.desc{
+        font-family: 'Droid Serif', serif;
+        font-weight: 300;
+    }
+    .acon{
+        text-align: center !important;
+    }
+    .aconNivel{
+        text-align: left !important;
+
     }
 
 }

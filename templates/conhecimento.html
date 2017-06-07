@@ -6,16 +6,16 @@
         {% for conhecimento in dado.conhecimento.all %}
             <div class="row">
                <div class="col s6">
-                  <h6>{{ conhecimento.nome }}</h6>
+                  <h6 class="acon">{{ conhecimento.nome }}</h6>
                </div>
                <div class="col s6">
-                  <div class="right">
+                  <div class="acon">
                       {% for vezes in nivel %}
                         {% if vezes <= conhecimento.nivel %}
-                            <a class="left"><i class="material-icons">star</i></a>
+                            <a class="aconNivel"><i class="material-icons">star</i></a>
                         {% endif %}
                         {% if vezes > conhecimento.nivel %}
-                            <a class="right"><i class="material-icons">star_border</i></a>
+                            <a class="aconNivel"><i class="material-icons">star_border</i></a>
                         {% endif %}
                     {% endfor %}
                   </div>
